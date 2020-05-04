@@ -38,7 +38,7 @@ In the newly created `.env` file, set the values:
 npm install
 ```
 
-3. Start the React client
+2. Start the React client
 
 ```bash
 npm start
@@ -68,5 +68,4 @@ stripe listen --events=payment_intent.succeeded >> log.txt
 
 - Author: [@all819]
 - Heavily copied from stripe-samples/checkout-one-time-payments
-- Author: [@thorsten-stripe](https://twitter.com/thorwebdev)
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
