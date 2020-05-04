@@ -1,0 +1,6 @@
+Checking for new versions...
+
+2020-04-27 00:38:04   --> ]8;;https://dashboard.stripe.com/test/events?type=payment_intent.succeeded\payment_intent.succeeded]8;;\ []8;;https://dashboard.stripe.com/test/events/evt_1GcRXSKiacP5UQAXh1Es7Pea\evt_1GcRXSKiacP5UQAXh1Es7Pea]8;;\]
+Checking for new versions...
+
+2020-04-27 00:39:52   --> ]8;;https://dashboard.stripe.com/test/events?type=payment_intent.succeeded\payment_intent.succeeded]8;;\ []8;;https://dashboard.stripe.com/test/events/evt_1GcRZDKiacP5UQAX054gp1Tq\evt_1GcRZDKiacP5UQAX054gp1Tq]8;;\]
