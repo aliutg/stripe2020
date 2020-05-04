@@ -17,6 +17,7 @@ git clone https://github.com/all819/stripe2020
 - Enable client-only checkout: https://dashboard.stripe.com/account/checkout/settings
 - Create a one-time or recurring product in the Stripe Dashboard: https://dashboard.stripe.com/products
   - After creation click the "Use with checkout" button and copy the sku (sku_xxx) ID.
+- Navigate into checkout-one-time-payments/client
 - Set up the environment variables for React
 
 ```bash
@@ -44,6 +45,9 @@ npm start
 ```
 
 - Client running on http://localhost:3000
+
+## Track successful payments
+
 - Set up the Stripe CLI by following the steps at https://stripe.com/docs/stripe-cli
 - Link your Stripe account by following the steps at https://stripe.com/docs/stripe-cli#link-account
 
@@ -51,13 +55,13 @@ npm start
 stripe listen
 ```
 
-The CLI will print a webhook secret key to the console. Set STRIPE_WEBHOOK_SECRET to this value in your .env file.
+The CLI will print a webhook secret key to the console. Set REACT_APP_STRIPE_WEBHOOK_SECRET to this value in your .env file.
 
 You should see events logged in the console where the CLI is running.
 - Log the events in a locally stored file
 
 ```bash
-stripe listen >> log.txt
+stripe listen --events=payment_intent.succeeded >> log.txt
 ```
 
 ## Credits
