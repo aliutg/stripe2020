@@ -11,7 +11,7 @@ This is a React version of the HTML + Vanilla JavaScript client implementation. 
 - Manually clone and configure this assignment 
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/all819/stripe2020
 ```
 
 - Enable client-only checkout: https://dashboard.stripe.com/account/checkout/settings
