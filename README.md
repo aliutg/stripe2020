@@ -8,7 +8,7 @@ This is a React version of the HTML + Vanilla JavaScript client implementation. 
 ## Setup
 
 - Create a React App by following the directions at https://create-react-app.dev/docs/getting-started/
-- Manually clone and configure this assignment 
+- Manually clone and configure this assignment:
 
 ```bash
 git clone https://github.com/all819/stripe2020
@@ -18,7 +18,7 @@ git clone https://github.com/all819/stripe2020
 - Create a one-time or recurring product in the Stripe Dashboard: https://dashboard.stripe.com/products
   - After creation click the "Use with checkout" button and copy the sku (sku_xxx) ID.
 - Navigate into checkout-one-time-payments/client
-- Set up the environment variables for React
+- Set up the environment variables for React:
 
 ```bash
 cp .env.example .env
@@ -32,13 +32,13 @@ In the newly created `.env` file, set the values:
 
 ## How to run
 
-1. Install the dependecies
+1. Install the dependecies:
 
 ```bash
 npm install
 ```
 
-2. Start the React client
+2. Start the React client:
 
 ```bash
 npm start
@@ -50,6 +50,7 @@ npm start
 
 - Set up the Stripe CLI by following the steps at https://stripe.com/docs/stripe-cli
 - Link your Stripe account by following the steps at https://stripe.com/docs/stripe-cli#link-account
+- Generate your webhook secret key:
 
 ```bash
 stripe listen
@@ -58,7 +59,7 @@ stripe listen
 The CLI will print a webhook secret key to the console. Set REACT_APP_STRIPE_WEBHOOK_SECRET to this value in your .env file.
 
 You should see events logged in the console where the CLI is running.
-- Log the events in a locally stored file
+- Log the events in a locally stored file:
 
 ```bash
 stripe listen --events=payment_intent.succeeded >> log.txt
